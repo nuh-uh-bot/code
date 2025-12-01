@@ -1,0 +1,69 @@
+
+
+
+         SCHOOL FEE MANAGEMENT SYSTEM
+             by- Madhav, Barath, Minhaj
+
+
+A simple fee tracking system for managing school student 
+fees by class. Uses JSON database to store and persist data.
+Easy-to-use command-line interface.
+
+
+~ WHAT IT DOES (Functions of this program)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1) ADD CLASS
+     → Create new classes (10-A, Class IX, etc)
+     → Set monthly fee for each class
+     → Stores in database
+
+  2) ADD STUDENT
+     → Add students to existing classes
+     → Each student gets unique roll number
+     → Fee automatically set from class fee
+
+  3) RECORD PAYMENT
+     → Track monthly fee payments
+     → Auto-calculate total paid & due
+     → Prevents duplicate payments
+
+  4) VIEW STUDENT DETAILS
+     → See individual student fee status
+     → Month-wise payment breakdown
+     → Total paid vs due
+
+  5) VIEW CLASS REPORT
+     → Class-wide fee summary
+     → All students' status at a glance
+     → Total class paid & due
+
+
+~ HOW DATA IS STORED 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  File: data.json
+  
+  Structure:
+    └─ Classes
+       ├─ Class Name
+       │  ├─ Monthly Fee
+       │  └─ Students
+       │     └─ Student Info (name, payments, totals)
+
+
+~ ACADEMIC YEAR 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Months tracked: June → ... → May (10 months)
+
+
+~ KEY FEATURES 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ No duplicate classes
+  ✓ No duplicate student roll numbers
+  ✓ Case-insensitive month input
+  ✓ Payment validation
+  ✓ Automatic calculations
+  ✓ Auto-save to database
+  ✓ Error handling & validation
+
+
